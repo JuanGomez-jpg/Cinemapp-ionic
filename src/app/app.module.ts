@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { HomeComponent } from './home/home.component';
 
+import { MoviesService } from './api/movies.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     IonicModule.forRoot()
   ],
-  providers: [],
+  providers: [MoviesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
